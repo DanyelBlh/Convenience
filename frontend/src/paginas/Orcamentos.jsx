@@ -1,7 +1,8 @@
 function Orcamentos(){
     return(
-        <h2>Páginas Orçamentos</h2>
-
+        <div className="principal">
+            <h2>Páginas Orçamentos</h2>
+        </div>
     );
 }
 

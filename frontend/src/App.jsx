@@ -1,11 +1,12 @@
-import './App.css';
+import React from 'react';
 import { Route, Routes } from 'react-router-dom';
+import Layout from './layout/Layout';
 import Home from './paginas/Home';
 import Destinos from './paginas/Destinos';
 import Orcamentos from './paginas/Orcamentos';
 import Sobre from './paginas/Sobre';
 import Login from './paginas/Login';
-import Layout from './layout/Layout';
+
 
 
 
@@ -15,14 +16,13 @@ function App() {
      <>
         <Routes>
           <Route path='/' element={<Layout><Home/></Layout>} />
-          <Route path='/' destinos={<Layout><Destinos/></Layout>} />
-          <Route path='/' orcamentos={<Layout><Orcamentos/></Layout>} />
-          <Route path='/' sobre={<Layout><Sobre/></Layout>} />
-          <Route path='/' login={<Layout><Login/></Layout>} />
+          <Route path='/destinos' element={<Layout><Destinos/></Layout>} />
+          <Route path='/orcamentos' element={<Layout><Orcamentos/></Layout>} />
+          <Route path='/sobre' element={<Layout><Sobre/></Layout>} />
+          <Route path='/login' element={<Layout><Login/></Layout>} />
         </Routes>
      </>
       
-    
   );
 }
 

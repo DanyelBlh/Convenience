@@ -1,7 +1,8 @@
 function Login() {
     return(
-        <h2>Página Login</h2>
-
+        <div className="principal">
+            <h2>Página Login</h2>
+        </div>
     );
 }
 
