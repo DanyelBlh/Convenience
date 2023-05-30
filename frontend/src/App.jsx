@@ -15,10 +15,10 @@ function App() {
      <>
         <Routes>
           <Route path='/' element={<Layout><Home/></Layout>} />
-          <Route path='/' destinos={<Layout><Destinos/></Layout>} />
-          <Route path='/' orcamentos={<Layout><Orcamentos/></Layout>} />
-          <Route path='/' sobre={<Layout><Sobre/></Layout>} />
-          <Route path='/' login={<Layout><Login/></Layout>} />
+          <Route path='/destinos' element={<Layout><Destinos/></Layout>} />
+          <Route path='/orcamentos' element={<Layout><Orcamentos/></Layout>} />
+          <Route path='/sobre' element={<Layout><Sobre/></Layout>} />
+          <Route path='/login' element={<Layout><Login/></Layout>} />
         </Routes>
      </>
       
