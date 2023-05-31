@@ -1,8 +1,18 @@
-function Orcamentos(){
-    return(
-        <h2>Páginas Orçamentos</h2>
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
-    );
+
+
+function Orcamentos(){
+    
+    const [pacotes, setPacotes] = useState([]);
+    function getPacotes(){
+        axios.get("http://localhost:3005/pacotes")
+            .then((resposta) => { 
+                setPacotes(resposta.data);
+            });
+    }
+    useEffect(getPacotes, []);
 }
 
 export default Orcamentos;
