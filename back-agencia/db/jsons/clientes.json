@@ -1,0 +1,19 @@
+[{
+  "_id": 1,
+  "nome": "Natalia",
+  "email": "natalia@gmail.com",
+  "telefone": "41988995522",
+  "cep": "83105360"
+},{
+  "_id": 2,
+  "nome": "João",
+  "email": "joao@gmail.com",
+  "telefone": "4188556633",
+  "cep": "83650120"
+},{
+  "_id": 3,
+  "nome": "José",
+  "email": "jose@gmail.com",
+  "telefone": "4188551100",
+  "cep": "88500160"
+}]

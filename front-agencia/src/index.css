@@ -1,0 +1,171 @@
+a,
+h1,
+h2,
+h3,
+ul,
+html,
+body,
+#root {
+  
+  margin: 4px;
+  padding: 0;
+}
+
+h2{
+  color: #fffefe;
+}
+
+label{
+  color: #fffefe;
+}
+
+table{
+  background-color: #fffefe;
+}
+
+body {
+  margin: 0;
+  background-color: #f4f6fa;
+  overflow-y: scroll;
+}
+
+header {
+  background-image: url('./imagens/terminal-do-aeroporto.jpg');
+  height: 400px;
+  grid-area: header;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+}
+
+
+nav {
+  height: 70px;
+  grid-area: nav;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdfafa;
+  
+}
+
+main {
+  grid-area: main;
+  background-color: #f8f8d5;
+  min-width: 80vh;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  grid-area: footer;
+
+}
+
+#root {
+  min-height: 100vh;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  background-color: white;
+  border-left: #e1e1e1 1px solid;
+  border-right: #e1e1e1 1px solid;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  display: grid;
+  grid-template:
+    "header header header" minmax(auto, 15vh)
+    "nav nav nav" minmax(auto, 9vh)
+    "main main main"
+    "footer footer footer" minmax(auto, 9vh);
+}
+
+#root > * {
+  /* margin: 2px; */
+  background-color: rgb(0, 85, 135);
+ 
+}
+
+#root > main > div > div {
+  text-align: left;
+  font-size: 10pt;
+ 
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 3px;
+ 
+}
+
+#root > nav > ul li a {
+  display: block;
+  color: rgb(54, 61, 60);
+  text-align: center;
+  padding: 8px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  
+  
+}
+
+#root > nav > ul li a:hover {
+  color: #3283e6;
+  font-weight: bold;
+  
+}
+
+#root > nav > ul li a.active {
+  color: #3283e6;
+  font-weight: 600;
+}
+
+#root > main > div.principal {
+  padding: 50px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "footer";
+  }
+  nav ul {
+    flex-direction: column;
+    
+  }
+}
+
+@media (min-width: 1500px) {
+  body {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 3000px) {
+  body {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+
+.navbar{
+  
+  display: inline-flex;
+  background-color: #fffefe;
+  border-radius: 20px;
+  
+}

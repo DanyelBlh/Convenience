@@ -1,0 +1,25 @@
+[{
+  "_id": 1,
+  "nome": "São Paulo-Cancun",
+  "destino": "Cancun",
+  "descricao": "Viagem all inclusive",
+  "preco": 8000,
+  "partida": "2023-09-15",
+  "chegada": "2023-09-22"
+},{
+  "_id": 2,
+  "nome": "São Paulo-Santiago",
+  "destino": "Santiago",
+  "descricao": "Passagem e hotel inclusos",
+  "preco": 4000,
+  "partida": "2023-10-11",
+  "chegada": "2023-10-16"
+},{
+  "_id": 3,
+  "nome": "Curitiba-Salvador",
+  "destino": "Salvador",
+  "descricao": "Passagem e hotel inclusos",
+  "preco": 2000,
+  "partida": "2023-12-09",
+  "chegada": "2023-12-16"
+}]
